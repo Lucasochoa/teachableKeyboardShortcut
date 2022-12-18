@@ -1,3 +1,5 @@
+const element = document.getElementById("submitButton");
+
 
 function bindShortcut(shortcut, selector) {
   console.log("binding shortcut");
@@ -12,7 +14,7 @@ function bindShortcut(shortcut, selector) {
 
 const form = document.querySelector('form');
 
-form.addEventListener('submit', event => {
+element.addEventListener('submit', event => {
   event.preventDefault();
   const shortcut = document.querySelector('#shortcut').value;
   const selector = document.querySelector('#selector').value;
