@@ -16,5 +16,16 @@ form.addEventListener('submit', event => {
 });
 
 
+const selectButton = document.querySelector('input[type="button"]');
+const selectorField = document.querySelector('#selector');
+
+selectButton.addEventListener('click', () => {
+  document.body.addEventListener('click', event => {
+    event.preventDefault();
+    const selector = getComputedStyle(event.target, '::before').content;
+    selectorField.value = selector;
+  });
+});
+
 
 
