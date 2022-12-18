@@ -1,5 +1,6 @@
 
 function bindShortcut(shortcut, selector) {
+  console.log("binding shortcut");
   document.addEventListener('keydown', event => {
     console.log("firing shortcut", event.keyCode);
     if (event.key === shortcut) {
