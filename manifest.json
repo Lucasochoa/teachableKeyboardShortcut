@@ -1,33 +1,17 @@
 {
-  "name": "Teachable Keyboard Shortcut",
-  "description": "lets you select a button on a web page and use a keyboard shortcut",
-  "version": "1.0",
   "manifest_version": 2,
-  "action": {
-    "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
+  "name": "Teachable Keyboard Shortcut",
+  "version": "1.0",
+  "description": "test",
   "permissions": [
     "activeTab",
-    "declarativeContent",
     "https://www.example.com/*"
   ],
-    
   "background": {
     "scripts": ["background.js"]
   },
-    
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
-  },
-    
-  "commands": {
-    "_execute_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F",
-        "mac": "MacCtrl+Shift+F"
-      },
-      "description": "Opens hello.html"
-    }
   }
 }
